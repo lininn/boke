@@ -1,0 +1,57 @@
+*{
+				margin: 0;
+				padding: 0;
+			}
+			table{
+				width: 800px;
+				border-collapse: collapse;
+				
+				margin: 0 auto;
+			
+			}
+			tr{
+				height: 60px;
+				
+			}
+			th{
+				width: 180px;
+				border: solid 1px;
+				border-collapse: collapse;
+				
+			}
+			td{
+				
+				width: 180px;
+				border: solid 1px;
+				border-collapse: collapse;
+				word-break: break-all;
+				text-align: center;
+			}
+			tr:nth-child(1){
+				background: #68b946;
+				height: 100px;
+			
+			}
+			tr:nth-child(even){
+				background: #47C9AF;
+			}
+			td:nth-child(3){
+				
+				margin-left: 3px;
+				font-size: 12px;
+			}
+			td:nth-child(4){
+				
+				margin-left: 3px;
+				font-size: 12px;
+			}
+			.ch{
+				height: 25px;
+				width: 25px;
+			}
+			#shanchu{
+				height: 30px;
+				width: 60px;
+				margin-left: 50px;
+				cursor: pointer;
+			}

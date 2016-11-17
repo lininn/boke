@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				
+				var aa=document.getElementById("aa");
+			var bb=document.getElementById("bb");
+			bb.onclick=function(){
+				if(sessionStorage.jishu){
+				sessionStorage.jishu++;
+				aa.innerHTML=sessionStorage.jishu;
+			}else{
+				sessionStorage.jishu=0;
+			}
+				
+			}
+				
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+	<span id="aa">0</span>
+		<input type="button" name="" id="bb" value="add" />
+	</body>
+</html>

@@ -1,0 +1,90 @@
+.ge{
+		display: none;
+	}	
+	table{
+		width: 100%;
+		border-collapse: collapse;
+		position: relative;
+	}
+	td{
+		display: block;
+		width: 100%;
+		height: 40px;
+		border: solid 1px;
+		border-bottom: none;
+		text-align: center;
+		line-height: 40px;
+		position: relative;
+		font-family: "微软雅黑";
+		font-size: 14px;
+	}
+	
+	span{
+		display: inline-block;
+		width: 20%;
+		height: 30px;
+		
+		position: absolute;
+		left: 5%;
+		top: 0px;
+		
+	}
+	.iid:before{
+		content: "ID";
+		font-size: 17px;
+		font-weight: bold;
+	
+	}
+	.nnm:before{
+		content: "歌曲名称";
+		font-size: 17px;
+		font-weight: bold;
+
+	}
+	
+	#anow{
+		height: 10px;
+		width: 100px;
+	top: -80px;
+		border: none;
+		float: right;
+	}
+	#anow input{
+		height: 15px;
+		width: 15px;
+	}
+	.idbg{
+		  
+  background:#35b558;
+  /*ff5c00 cheng
+		 * #35b558绿色
+		 */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+	}
+	.nnmbg{
+		border-bottom-left-radius:5px;
+		border-bottom-right-radius:5px;
+		border-bottom: solid 1px !important;
+		box-shadow: 3px 3px 10px #aaa;
+	}
+	.di{
+		height: 90px;
+		border:solid 1px;
+		line-height: 90px;
+	}
+	#quan{
+		height: 15px;
+		width: 15px;
+	
+	}
+	#shanchu{
+		height: 35px;
+		width: 100px;
+		margin-left: 50px;
+		font-size: 15px;
+		font-family: "微软雅黑";
+		cursor: pointer;
+	}

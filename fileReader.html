@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>fileReader</title>
+		<script type="text/javascript">
+			function aa(source){
+				 var file=source.files[0];
+				 if(window.FileReader){
+				 	var fr=new FileReader();
+				 	fr.readAsDataURL(file);
+				 	fr.onloadend=function(e){
+				 		document.getElementById("tu").src=e.target.result;
+				
+				 	document.getElementById("wen").value=e.target.result;
+				 	}
+				 }
+			}
+		</script>
+	</head>
+	<body>
+		<input type="file" onchange="aa(this)">
+		<div><img src="" id="tu"/></div>
+		<textarea id="wen" rows="20" cols="20"></textarea>
+	</body>
+	<script type="text/javascript">
+		
+	</script>
+</html>

@@ -1,0 +1,95 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+			#yinyue{
+				height: 500px;
+				width: 250px;
+				margin: 30px auto;
+				border-radius: 10px;
+				background: url(../img/2.jpg) no-repeat center center;
+				position: relative;
+			}
+			#dao ul{
+				left:30px;
+				position: absolute;
+				top: 30px;
+				
+			}
+			#dao ul li{
+				height: 40px;
+				width:62px;
+				float: left;
+				border: solid 1px;
+				text-align: center;
+				cursor: pointer;
+				
+			}
+			#ge{
+				left: 30px;
+				width: 190px;
+				position: absolute;
+				top: 110px;
+				
+			}
+			#upa{
+				position: absolute;
+				right: -10px;
+				top: 40px;
+				display: none;
+			}
+			
+			#gundong{
+				position: absolute;
+				top: 80px;
+				height: 20px;
+				width: 200px;
+			
+				left: 25px;
+			}
+			#gun_1{
+				height: 20px;
+				width: 200px;
+			}
+			
+			
+			
+			
+			
+			
+			#upda{
+				width: 60px;
+				
+			}
+			#ge ul{
+				border-top: 1px solid #ffffce;
+				border-bottom: 1px solid #ffffce;
+				border-radius: 5px;
+			}
+			#ge ul li{
+				width: 190px;
+				height: 30px;
+				line-height: 30px;
+				border-left: 1px solid #ffffce;
+				border-right: 1px solid #ffffce;
+				border-bottom: 1px solid #cdd6f8;
+				border-radius: 5px;
+				position: relative;
+			}
+			#ge ul li span{
+				font-size: 13px;
+				font-weight: bold;
+				left: 25px;
+				position: absolute;
+				cursor: pointer;
+			}
+			#ge ul li label{
+				margin-left: 5px;
+				cursor: pointer;
+			}
+			.aa{
+			color: #fcfdd2;
+			}

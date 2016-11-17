@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+			canvas{
+				float: left;
+				
+			}
+			#aa{
+				height:300px;
+				width: 300px;
+				float:left;
+				
+				overflow: hidden;
+			}
+			#aa img{
+			
+			}
+			#cc{
+				position: absolute;
+				height: 50px;
+				width: 50px;
+				border: 1px solid #000000;
+				
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var aa=document.getElementById("aa");
+				var cc=document.getElementById("cc");
+					var can=document.getElementById("bb");
+					var tx=can.getContext("2d");
+				aa.onmousemove=function(e){
+				
+					cc.style.left=(e.pageX-25)+"px";
+					cc.style.top=(e.pageY-25)+"px";
+					var xx=e.pageX-25;
+					var yy=e.pageY-25;
+					var aimg=new Image();
+					aimg.src="img/work11.jpg";
+					aimg.onload=function(){
+						tx.drawImage(aimg,xx,yy,50,50,0,0,300,300);
+					}
+					
+				
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="aa"><img src="img/work11.jpg"/></div>
+		<canvas id="bb" width="300px" height="300px" style="border: 1px solid red;"></canvas>
+		<div id="cc"></div>
+	</body>
+</html>

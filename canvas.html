@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				document.body.innerHTML="<canvas id='can' height='500px' style='background: yellow' width='500px'></canvas>"
+				
+				var c=document.getElementById("can");
+				var tx=c.getContext('2d');
+				tx.fillStyle='#ff0000';
+				tx.translate(200,200);
+			var dat=new Date();
+				setInterval(function(){
+				
+				tx.clearRect(0,0,200,200);
+					tx.rotate(6*Math.PI/180);
+				tx.fillRect(1,1,100,1); 
+				
+				},1000)
+				
+				
+				
+				
+			}
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

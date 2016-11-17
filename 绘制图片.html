@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var can=document.getElementsByTagName('canvas')[0];
+				var con=can.getContext('2d');
+				con.fillStyle="#eeeeef";
+				con.fillRect(0,0,500,500);
+				
+				var im=new Image();
+				im.src='img/audio.gif';
+				im.onload=function(){
+					con.drawImage(im,5,5,75,75,200,200,300,300);
+				}
+				
+				
+			}
+		</script>
+	</head>
+	<body>
+		<canvas id="" width="500" height="500"></canvas>
+	</body>
+</html>

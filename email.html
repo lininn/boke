@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var em=document.getElementById("email");
+				var a=document.getElementsByTagName('input')[1];
+				a.onclick=function(){
+					if(em.value==""){
+						alert('不能为空！')
+					}else if(!email.checkValidity()){
+						alert('请输入正确的邮箱！');
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form action="article.html" method="post">
+			<input type="email" name="email" id="email" value="" />
+			<input type="button" value=""/>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var can=document.getElementsByTagName('canvas')[0];
+				var con=can.getContext('2d');
+				con.fillStyle='red';
+				con.fillRect(0,0,100,50);
+				con.globalCompositeOperation="source-over";
+				con.beginPath();
+				con.fillStyle="blueviolet";
+				con.arc(80,50,30,0,Math.PI*2,false);
+				con.fill();
+			}
+		</script>
+	</head>
+	<body>
+		<canvas width="500" height="500"></canvas>
+	</body>
+</html>

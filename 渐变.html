@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			canvas{
+				height: 500px;
+				width: 500px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var can=document.getElementById('can');
+				var context=can.getContext('2d');
+				var g1=context.createRadialGradient(400,0,0,200,0,400);
+				 g1.addColorStop(0.1,"rgb(255,0,255)");
+				  g1.addColorStop(0.5,"rgb(0,255,0)");
+				 g1.addColorStop(1,"rgb(0,0,255)");
+				
+					context.fillStyle=g1;
+					context.fillRect(0,0,500,500);
+			}
+		</script>
+	</head>
+	<body>
+		<canvas id="can"></canvas>
+	</body>
+</html>

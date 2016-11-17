@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function shan(){
+				var a=document.getElementById("a");
+				var b=document.createRange();
+				var jie=a.firstChild;
+				b.setStart(jie,1);
+				b.setEnd(jie,4);
+				b.deleteContents();
+				
+			}
+		</script>
+	</head>
+	<body>
+		<div id="a">
+			你说我这里删除多少合适呢》？
+		</div>
+		<input type="button" name="" id="" value="删除"  onclick="shan()"/>
+	</body>
+</html>

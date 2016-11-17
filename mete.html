@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script type="text/javascript">
+		window.onload=function(){
+			var ina=document.getElementsByTagName('input')[0];
+			var s=document.getSelection();
+				ina.onclick=function(){
+				alert(s.rangeCount);
+				alert(s.getRangeAt(0));
+			}
+		
+		}
+	</script>
+	<body>
+		<!--<meter max="100" min="0"
+			low="30" high="80" value="10"></meter>-->
+			range属性的方法和属性啦<input type="button">
+	</body>
+</html>

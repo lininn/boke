@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/easeljs-0.8.2.min.js">
+			
+		</script>
+		<script type="text/javascript">
+		var jishu=0;
+		var can,txt,stage;
+			window.onload=function(){
+				
+				 can=document.getElementsByTagName('canvas')[0];
+				 stage=new createjs.Stage(can);
+				 txt=new createjs.Text('number->0','20px 黑体','#ff0000');
+				createjs.Ticker.setFPS(1);
+				stage.addChild(txt);
+				createjs.Ticker.addEventListener('tick',tick);
+				
+			}
+		function tick(e){
+				jishu++;
+				txt.text="number->0"+jishu;
+				
+				stage.update();
+			}
+		</script>
+	</head>
+	<body>
+		<canvas width="1000px" height="500px"></canvas>
+	</body>
+</html>

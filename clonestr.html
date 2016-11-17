@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+<script type="text/javascript">
+	function yidong(){
+		var a=document.getElementById("a");
+		var aa=document.getElementById("aa");
+		var ran=document.createRange();
+		ran.selectNodeContents(a);
+		ran.collapse(false)
+		var xin=ran.extractContents();
+		aa.appendChild(xin);
+	}
+</script>
+	</head>
+	<body>
+		
+		<div id="a" style="background: red;height: 80px;">第一个</div>
+		<div id="aa" style="background: yellow;height: 100px;"></div>
+		<button onclick="yidong()">移动</button>
+	</body>
+</html>

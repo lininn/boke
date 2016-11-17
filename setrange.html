@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function shanchu(){
+			var mytable=document.getElementById("mytable");
+			if(mytable.rows.length>0){
+				var row=mytable.rows[0];
+				var rang=document.createRange();
+				rang.setStartBefore(row);
+				rang.setEndAfter(row);
+				rang.deleteContents();
+			}
+			}
+		</script>
+	</head>
+	<body>
+	
+			<table border="1" cellspacing="0" cellpadding="0" width="600" align="center" id="mytable">
+				<tr><th>Header</th>
+					<th>Header</th>
+					<th>Header</th>
+					<th>Header</th>
+				</tr>
+				<tr>
+					<td>Data</td>
+					<td>Data</td>
+					<td>Data</td>
+					<td>Data</td>
+				</tr>
+				<input type="button" name="" id="" value="删除" onclick="shanchu()" />
+			</table>
+		
+	</body>
+</html>

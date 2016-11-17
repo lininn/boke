@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function dela(obj){
+				var div1=document.getElementById("div1");
+				var c=document.createRange();
+				if(obj){
+					c.selectNode(div1);
+					c.deleteContents();
+				}else{
+					c.selectNodeContents(div1);
+					c.deleteContents();
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1" style="background: red;height: 100px;">
+			元素中的内容
+		</div>
+		<input type="button" name="" id="" value="删除元素" onclick="dela(false)"/>
+		<input type="button" name="" id="" value="删除节点" onclick="dela(true)" />
+	</body>
+</html>

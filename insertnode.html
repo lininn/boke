@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function start1(){
+				
+				var btn=document.getElementById("anniu");
+				var se=document.getSelection();
+				if(se.rangeCount>0){
+				var rang=se.getRangeAt(0);
+				rang.insertNode(btn);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="a" style="background: red; height: 100px; width: 300px;">
+			这是我随便书写的内容这是我随便书写的内容这是我随便书写的内容这是我随便书写的内容这是我随便书写的内容这是我随便书写的内容
+		</div>
+		<button id="anniu" onclick="start1()">按钮</button>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function kelong(){
+				var aa=document.getElementById("div1");
+				var rangobj=document.createRange();
+				rangobj.selectNodeContents(aa);
+				var c=rangobj.cloneContents();
+				aa.appendChild(c);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			我不会告诉你我会复制的
+			<input type="button" onclick="kelong()" value="克隆自己">
+		</div>
+	</body>
+</html>

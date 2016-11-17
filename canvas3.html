@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function draw(id){
+				var canvas=document.getElementById("can");
+				var context=canvas.getContext('2d');
+				context.fillStyle="#ff0000";
+				context.fillRect(0,0,600,700);
+				for(var i=0;i<10;i++){
+					context.beginPath();
+					context.arc(i*25,i*25,i*10,0,Math.PI*2,true);
+					context.closePath();
+					context.fillStyle="rgba(255,255,0,0.25)";
+					context.fill();
+				}
+			}
+		</script>
+	</head>
+	<body onload="draw('can')">
+		<canvas id="can" width="600px" width="800px"></canvas>
+	</body>
+</html>

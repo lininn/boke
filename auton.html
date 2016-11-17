@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<audio controls="controls" id="yinyue">
+			<source src="img/最浪漫的事.mp3"></source>
+		</audio>
+		<input type="button" value="大"  onclick="u('up')"/>
+	</body>
+	<script type="text/javascript">
+		function u(type){
+			var a=document.getElementById("yinyue");
+			if(type=='up'){
+			
+			var vo=a.volume+0.1;
+			if(vo>=1){
+				vo=1;
+			}
+			a.volume=vo;	
+			}
+		}
+	</script>
+	
+</html>

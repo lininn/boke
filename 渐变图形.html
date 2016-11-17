@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			canvas{
+				height: 500px;
+				width: 500px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var can=document.getElementsByTagName('canvas')[0];
+				var con=can.getContext('2d');
+				var g2=con.createLinearGradient(0,0,0,200);
+				g2.addColorStop(0.1,"white");
+				
+				con.fillStyle=g2;
+				con.fillRect(0,0,500,500);
+					var g3=con.createLinearGradient(0,0,100,0);
+						g3.addColorStop(0.1,"rgba(255,255,0,0.25)");
+				g3.addColorStop(1,"rgba(0,255,255,0.25)");
+				var i=0;
+				
+				var timer=setInterval(function(){
+					
+					i++;
+					con.beginPath();
+					con.fillStyle=g3;
+					con.arc(i*10,i*10,i*4,0,Math.PI*2,true);
+					con.closePath()
+					con.fill();
+					
+				},800);
+				
+					
+				
+			}
+		</script>
+	</head>
+	<body>
+		<canvas></canvas>
+	</body>
+</html>

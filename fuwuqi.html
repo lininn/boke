@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+		window.onload=function(){
+			
+			var evs = new EventSource("new.php");
+				document.getElementById("div1").innerHTML="ss";
+				evs.onopen=function(e){
+				document.getElementById("div1").innerHTML='ok';
+			}
+				evs.onerror=function(e){
+				document.getElementById("div1").innerHTML="fa";
+			}
+			evs.onmessage=function(e){
+			var obj=JSON.parse(e.data);
+			document.write(obj.time)
+	
+			
+			}
+			
+		}
+		
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			
+		</div>
+	</body>
+</html>

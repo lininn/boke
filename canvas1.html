@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			canvas{
+				border: 1px solid #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="can" width="500px" height="500px">该浏览器不支持</canvas>
+	</body>
+	<script type="text/javascript">
+		var can=document.getElementById("can");
+		var tx=can.getContext("2d");
+			tx.fillStyle="#ffff00";
+		
+//		tx.beginPath();
+//
+//	tx.moveTo(10,10);
+//		
+//	tx.lineTo(200,300);
+//	tx.lineTo(200,10);
+//	tx.lineTo(10,10);
+//	tx.fill();
+//		tx.beginPath();
+//	tx.moveTo(20,400);
+//	tx.lineTo(300,400);
+//	tx.lineTo(300,500);
+//	tx.lineTo(20,500);
+//	tx.lineTo(20,400);
+//	tx.fill();
+tx.rect(10,10,200,300);
+tx.fill()
+tx.closePath();
+tx.beginPath();
+tx.rect(50,50,200,300);
+tx.fillStyle="#00ff00";
+tx.fill()
+tx.closePath();
+tx.beginPath();
+tx.rect(100,100,200,300);
+tx.fillStyle="#00ffff";
+tx.fill()
+		
+		
+	tx.stroke();
+
+	</script>
+</html>

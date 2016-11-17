@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			canvas{
+				height: 500px;
+				width: 500px;
+				
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var can=document.getElementById("can");
+				var context=can.getContext('2d');
+				context.fillStyle='#eeeeef';
+				context.fillRect(0,0,500,500);
+				context.translate(200,0);
+				context.fillStyle="rgba(250,0,0,0.25)";
+					setInterval(function(){
+						
+						context.translate(25,25);
+					context.scale(0.95,0.95);
+					context.rotate(Math.PI/10);
+					context.fillRect(0,0,100,50);
+					},500);
+//				for(var i=0;i<50;i++){
+//					context.translate(25,25);
+//					context.scale(0.95,0.95);
+//					context.rotate(Math.PI/10);
+//					context.fillRect(0,0,100,50);
+//				}
+			}
+		</script>
+	</head>
+	<body>
+		<canvas id="can"></canvas>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			
+		var work = new Worker('1.js');
+work.onmessage= function (event) { 
+document.write(event.data);
+}
+
+		</script>
+		
+		
+	</head>
+	<body>
+		<span id="aa">0</span>
+		
+	</body>
+</html>

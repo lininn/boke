@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<canvas id="can" width="800" height="600" ></canvas>
+	</body>
+	<script type="text/javascript">
+		var can=document.getElementById("can");
+		var tx=can.getContext("2d");
+//		tx.fillStyle="#ff0000";
+//		tx.arc(400,200,200,0,Math.PI*2,true);
+//		tx.stroke();
+//		tx.beginPath();
+//		
+//		tx.arc(320,120,50,0,(Math.PI/180)*180,true);
+//		tx.stroke();
+//		tx.beginPath();
+//	
+//		tx.arc(460,120,50,0,(Math.PI/180)*180,true);
+//		tx.stroke();
+//		tx.beginPath();
+//	
+//		tx.arc(400,300,50,0,(Math.PI/180)*180,false);
+//		
+//		tx.fill();
+//		
+//		tx.beginPath();
+//	
+//		tx.arc(400,3,50,0,(Math.PI/180)*30,false);
+//		tx.fillStyle="#000000";
+//		tx.stroke();
+//		tx.beginPath();
+//	
+//		tx.arc(350,3,50,0,(Math.PI/180)*60,false);
+//		tx.fillStyle="#000000";
+//		tx.stroke();
+//		tx.beginPath();
+//	
+//		tx.arc(300,3,50,0,(Math.PI/180)*60,false);
+//		tx.fillStyle="#000000";
+//		tx.stroke();
+//		tx.beginPath();
+//		tx.fillText("",300,200,500);
+//		
+//		
+//		tx.fillStyle='#ff0000';
+//		var i=1;
+//		timer=setInterval(function(){
+//			i++;
+//			if(i>20){
+//				clearInterval(timer);
+//				i=1;
+//			}
+//			tx.beginPath();
+//					tx.arc(i*35,i*15,i*5,0,Math.PI*2,true);
+//					tx.closePath();
+//					var a=Math.random();
+//					a=parseInt(a*255);
+//					tx.fillStyle="rgba("+a+",255,0,0.5)";
+//					tx.fill();
+//					tx.strokeStyle
+//				
+//		},1000);
+//					
+//					tx.beginPath();
+//					
+//					tx.translate(0,100);
+//					tx.font="150px 黑体";
+//					tx.fillText("lininn",100,100);
+//					tx.direction="rtl";
+//					tx.stroke();
+
+var img1=new Image();
+img1.src="img/2.jpg";
+img1.onload=function(){
+	tx.drawImage(img1,20,20,900,300);
+}
+
+					
+		
+	</script>
+</html>

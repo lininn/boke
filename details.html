@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			window.onload=function(){
+				var a=document.getElementById('b');
+				var b=document.getElementsByTagName('details');
+				if(b.open){
+					a.style.visibility='hidden';
+				}else{
+						a.style.visibility='visible';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<details id="a">
+		<summary>标题</summary>
+		<p id="b" style="visibility: hidden">1.ss</p>
+		</details>
+		<ol reversed="reversed">
+		<li>WW</li>
+			<li>WW</li>
+				<li>WW</li>
+		</ol>
+	</body>
+</html>

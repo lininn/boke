@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function kelong(){
+				var a=document.getElementById("a");
+				var rang=document.createRange();
+				rang.selectNodeContents(a);
+				var c=rang.cloneRange();
+				alert(c.toString());
+			}
+		</script>
+	</head>
+	
+	<body>
+		<div id="a">
+			这是我随便写的，我就是爱音乐
+		</div>
+		<input type="button" name="" id="" value="克隆节点" onclick="kelong()" />
+	</body>
+</html>
